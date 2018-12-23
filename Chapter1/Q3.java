@@ -1,4 +1,4 @@
-public class URLifyTest{
+public class Q3{
     public static void main(String[] args){
         String nameString = "Mr John Smith";
         char[] name = nameString.toCharArray();
@@ -10,12 +10,12 @@ public class URLifyTest{
 
     public static void replaceSpaces(char[] str, int trueLength){
         int spaceCount = 0, index = 0, i = 0;
-
         for(i=0;i<trueLength;i++){
             if(str[i] == ' '){
                 spaceCount++;
             }
         }
+
 
         if(trueLength < str.length){
             str[trueLength] = '\0';

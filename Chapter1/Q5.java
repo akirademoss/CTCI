@@ -1,4 +1,4 @@
-public class OneAwayTest{
+public class Q5{
     public static void main(String[] args){
         String s1 = "pale";
         String s2 = "ple";
