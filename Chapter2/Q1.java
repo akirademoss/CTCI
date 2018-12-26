@@ -1,7 +1,7 @@
 import java.util.Set;
 import java.util.HashSet;
 
-public class LinkedList{
+public class Q1{
    
     Node head;
    
@@ -64,7 +64,7 @@ public class LinkedList{
     }
 
     public static void main(String[] args){
-        LinkedList llist = new LinkedList(); 
+        Q1 llist = new Q1(); 
 
         llist.head = new Node(0);
         llist.appendToTail(llist.head, 1);
