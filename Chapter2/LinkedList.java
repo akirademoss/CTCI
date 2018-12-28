@@ -5,13 +5,19 @@ public class LinkedList{
    
     Node head;
    
-    public static class Node{
+    public class Node{
     Node next = null;
     int data;
     public Node(int d){ data = d;}
     }
 
-    public void appendToTail(Node head, int d){
+    public void addFirst(int d){
+        if(head == null){
+            head = new Node(d);
+        }
+    }
+
+    public void appendToTail(int d){
         Node end = new Node(d);
         Node n = head;
         while(n.next != null){
@@ -20,7 +26,7 @@ public class LinkedList{
         n.next = end;
     }
 
-    public Node deleteNote(Node head, int d){
+    public Node deleteNote(int d){
         Node n = head;
 
         if(n.data == d){
@@ -37,7 +43,7 @@ public class LinkedList{
         return head;
     }
 
-    public void printData(Node head){
+    public void printData(){
         Node n = head;
         while(n!= null){
             System.out.println(n.data);
@@ -46,7 +52,7 @@ public class LinkedList{
         
     }
 
-    public void deleteDups(Node head){
+    public void deleteDups(){
         Set<Integer> set = new HashSet<Integer>();
         Node n = head;
         Node previous = null;
@@ -63,21 +69,25 @@ public class LinkedList{
         
     }
 
+
+
+    
+/*****   Include the main() for testing and debugging  *****/
     public static void main(String[] args){
         LinkedList llist = new LinkedList(); 
 
-        llist.head = new Node(0);
-        llist.appendToTail(llist.head, 1);
-        llist.appendToTail(llist.head, 2);
-        llist.appendToTail(llist.head, 3);
-        llist.appendToTail(llist.head, 4);
-        llist.appendToTail(llist.head, 5);
-        llist.appendToTail(llist.head, 3);
-        llist.appendToTail(llist.head, 3);
-        llist.printData(llist.head);
-        llist.deleteDups(llist.head);
+        llist.addFirst(0);
+        llist.appendToTail(1);
+        llist.appendToTail(2);
+        llist.appendToTail(3);
+        llist.appendToTail(4);
+        llist.appendToTail(5);
+        llist.appendToTail(3);
+        llist.appendToTail(3);
+        llist.printData();
+        llist.deleteDups();
         System.out.println( "\n");
-        llist.printData(llist.head);
+        llist.printData();
     }
 }
 

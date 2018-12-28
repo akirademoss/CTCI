@@ -62,7 +62,8 @@ public class Q1{
         }
         
     }
-
+    
+    /*****   Include the main() for testing and debugging  *****/
     public static void main(String[] args){
         Q1 llist = new Q1(); 
 
