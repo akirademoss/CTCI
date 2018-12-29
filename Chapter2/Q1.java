@@ -1,3 +1,7 @@
+/**
+ * @author Akira Ka DeMoss
+ */
+
 import java.util.Set;
 import java.util.HashSet;
 
@@ -11,21 +15,19 @@ public class Q1{
     public Node(int d){ data = d;}
     }
 
-    // Add the first Node into LinkedList
-    public void addFirst(int d){
-        if(head == null){
-            head = new Node(d);
-        }
-    }
-
     // Add Node to end of LinkedList
     public void appendToTail(int d){
         Node end = new Node(d);
         Node n = head;
-        while(n.next != null){
-            n = n.next;
+        if(head == null){
+            head = new Node(d);
         }
-        n.next = end;
+        else{
+            while(n.next != null){
+                n = n.next;
+            }
+            n.next = end;
+        }
     }
 
     // Delete first occurance of a Node
@@ -62,7 +64,7 @@ public class Q1{
         
     }
 
-    //Note this is Q1 solution
+    //Note this is Question 2 solution
     public void deleteDups(){
         Set<Integer> set = new HashSet<Integer>();
         Node n = head;
@@ -84,7 +86,7 @@ public class Q1{
     public static void main(String[] args){
         Q1 llist = new Q1(); 
 
-        llist.addFirst(0);
+        llist.appendToTail(0);
         llist.appendToTail(1);
         llist.appendToTail(2);
         llist.appendToTail(3);
