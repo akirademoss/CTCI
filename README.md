@@ -24,8 +24,11 @@ bytes, write a method to rotate the image by 90 degrees. Can you do this in plac
 ## Chapter 2: Linked Lists
 
 Question 1.) **Remove Dups:** Write code to remove duplicates from an unsorted linked list.
+![ctci-q1](https://user-images.githubusercontent.com/8731829/50550862-4c514680-0c2c-11e9-8b9f-61ec055e0543.png)
 
 Question 2.) **Return Kth to Last:** Implement an algorithm to find the kth to last element of a singly linked list.
+![ctci-q2](https://user-images.githubusercontent.com/8731829/50550863-4c514680-0c2c-11e9-9bb4-3a77740ed1a9.png)
+
 
 Question 3.) **Delete Middle Node:** Implement an algorithm to delete a node in the middle (i.e., any node but
 the first and last node, not necessarily the exact middle) of a singly linked list, given only access to
