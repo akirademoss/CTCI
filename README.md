@@ -1,5 +1,5 @@
 # Cracking the Coding Interview Solutions
-My solutions for select problems in Cracking the Coding Interview.  Contents of this file include the output of my main method tests for each of my solutions.
+My solutions for select problems in Cracking the Coding Interview.  Contents of this file include the output of my main method tests for each of my solutions.  This will evolve as I study more problems, review, revisit and optimize solutions.
 
 ## Chapter 1: Arrays and Strings
 Question 1.) **Is Unique:** Implement an algorithm to determine if a string has all unique characters. What if you
