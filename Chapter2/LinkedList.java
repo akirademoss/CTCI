@@ -22,15 +22,15 @@ public class LinkedList{
     public void appendToTail(int d){
         Node end = new Node(d);
         Node n = head;
+        // Check if head has been set
         if(head == null){
             head = new Node(d);
+            return;
         }
-        else{
-            while(n.next != null){
-                n = n.next;
-            }
-            n.next = end;
+        while(n.next != null){
+            n = n.next;
         }
+        n.next = end;       
     }
 
     // Delete first occurance of a Node
@@ -67,7 +67,7 @@ public class LinkedList{
         
     }
 
-    //Note this is Question 2 solution
+    //Note this is Question 1 solution
     public void deleteDups(){
         Set<Integer> set = new HashSet<Integer>();
         Node n = head;
@@ -86,7 +86,7 @@ public class LinkedList{
     }
 
 /*****   Include the main() for testing and debugging  *****/
-    public static void main(String[] args){
+public static void main(String[] args){
         LinkedList llist = new LinkedList(); 
 
         llist.appendToTail(0);
@@ -95,12 +95,7 @@ public class LinkedList{
         llist.appendToTail(3);
         llist.appendToTail(4);
         llist.appendToTail(5);
-        llist.appendToTail(3);
-        llist.appendToTail(3);
-        System.out.println("\n\nBelow we insert elements 0,1,2,3,4,5,3,3. \n" + "LinkedList contains elements 0,1,2,3,4,5,3,3: \n");
-        llist.printData();
-        llist.deleteDups();
-        System.out.println("Below we delete all duplicates of 3. \n" + "LinkedList contains elements 0,1,2,3,4,5: \n");
+        System.out.println("\n\nBelow we insert elements 0,1,2,3,4,5. \n" + "LinkedList contains elements 0,1,2,3,4,5: \n");
         llist.printData();
         llist.deleteNode(0);
         llist.deleteNode(1);

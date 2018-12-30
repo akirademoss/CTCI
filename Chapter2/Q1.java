@@ -5,6 +5,9 @@
 import java.util.Set;
 import java.util.HashSet;
 
+/**
+ * A simple yet robust LinkedList implementation
+ */
 public class Q1{
    
     Node head;
@@ -19,15 +22,15 @@ public class Q1{
     public void appendToTail(int d){
         Node end = new Node(d);
         Node n = head;
+        // Check if head has been set
         if(head == null){
             head = new Node(d);
+            return;
         }
-        else{
-            while(n.next != null){
-                n = n.next;
-            }
-            n.next = end;
+        while(n.next != null){
+            n = n.next;
         }
+        n.next = end;       
     }
 
     // Delete first occurance of a Node
@@ -64,7 +67,7 @@ public class Q1{
         
     }
 
-    //Note this is Question 2 solution
+    //Note this is Question 1 solution
     public void deleteDups(){
         Set<Integer> set = new HashSet<Integer>();
         Node n = head;
@@ -99,11 +102,6 @@ public class Q1{
         llist.deleteDups();
         System.out.println("Below we delete all duplicates of 3. \n" + "LinkedList contains elements 0,1,2,3,4,5: \n");
         llist.printData();
-        llist.deleteNode(0);
-        llist.deleteNode(1);
-        llist.deleteNode(4);
-        llist.deleteNode(5);
-        System.out.println("Below we delete nodes 0,1,4,5. \n" + "LinkedList contains elements 2,3: \n");
-        llist.printData();
     }
 }
+
