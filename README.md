@@ -41,6 +41,7 @@ Question 2.) **Return Kth to Last:** Implement an algorithm to find the kth to l
 Question 3.) **Delete Middle Node:** Implement an algorithm to delete a node in the middle (i.e., any node but
 the first and last node, not necessarily the exact middle) of a singly linked list, given only access to
 that node.
+![ctci-c2-q3](https://user-images.githubusercontent.com/8731829/50553578-496f4980-0c5e-11e9-8755-7de6884b97c9.png)
 
 
 
