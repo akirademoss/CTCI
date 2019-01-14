@@ -1,4 +1,3 @@
-import java.util.NoSuchElementException;
 import java.util.EmptyStackException;
  
  public class Stack<T>{

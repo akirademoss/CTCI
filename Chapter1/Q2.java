@@ -1,18 +1,16 @@
 public class Q2{
+    /*****   Include the main() for testing and debugging  *****/
     public static void main(String[] args){
         String s1 = "gat";
-        String s2 = "gat";
+        String s2 = "tag";
         String s3 = "cab";
 
-        boolean boo;
-        boo = permutation(s1, s2);
-        System.out.println(boo);
-        boo = permutation(s2, s3);
-        System.out.println(boo);
-
-
+        System.out.println("print true if two strings are permutations of one another, otherwise print false\n");
+        System.out.println("'gat' and 'tag': " + permutation(s1, s2));
+        System.out.println("'tag' and 'cab': " + permutation(s2, s3));
     }
 
+    // Q2 solution
     public static boolean permutation(String s, String t){
         int[] letters = new int[128];
 

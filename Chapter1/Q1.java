@@ -1,25 +1,16 @@
 public class Q1{
 
+/*****   Include the main() for testing and debugging  *****/
     public static void main(String[] args){
         String str1 = "apples";
-        String str2 = "abcdefghijklmnopqrstuvwxyz";
+        String str2 = "racing";
 
-        if(isUniqueChars(str1)){
-            System.out.println("str1 is TRUE\n");
-        }
-        else{
-            System.out.println("str1 is FALSE\n");
-        }
-
-        if(isUniqueChars(str2)){
-            System.out.println("str2 is TRUE\n");
-        }
-        else{
-            System.out.println("str2 is FALSE\n");
-        }
-
+        System.out.println("print true if the string is unique, otherwise print false\n");
+        System.out.println("'apples' is a unique string: " + isUniqueChars(str1));
+        System.out.println("'racing' is a unique string: " + isUniqueChars(str2));
     }
 
+    // Q1 solution 
     public static boolean isUniqueChars(String str){
         if(str.length() > 128){
             return false;

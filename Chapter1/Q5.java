@@ -1,4 +1,5 @@
 public class Q5{
+    /*****   Include the main() for testing and debugging  *****/
     public static void main(String[] args){
         String s1 = "pale";
         String s2 = "ple";
@@ -12,6 +13,8 @@ public class Q5{
         String s7 = "pale";
         String s8 = "bake";
 
+        System.out.println("Print true if string is one edit away, otherwise print false\n");
+        
         oneAway(s1, s2);
         oneAway(s3, s4);
         oneAway(s5, s6);
