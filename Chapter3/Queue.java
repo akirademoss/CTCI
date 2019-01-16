@@ -34,10 +34,12 @@ public class Queue<T>{
       */
      public void add(T item){
          QueueNode<T> t = new QueueNode<T>(item);
+         //Need to make sure last node is not null so that 
          if(last != null){
              last.next = t;
          }
          last = t;
+         //When the queue has only one node, the first and last node will be the same node.
          if(first == null){
              first = last;
          }
