@@ -1,3 +1,5 @@
+package Chapter3;
+
 import java.util.EmptyStackException;
 
 class Q1{

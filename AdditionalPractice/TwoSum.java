@@ -1,4 +1,6 @@
-import java.util.*; 
+package AdditionalPractice;
+
+import java.util.*;
 
 
 //Given an array of integers, output all pairs that they add up to a specific target.
@@ -39,7 +41,7 @@ public class TwoSum {
     //HASHMAP EXAMPLE
     //works if not okay duplicates
     public static void twoSum1(int[] arr, int k){
-        Map<Integer, Integer> map = new Hashmap<>();
+        Map<Integer, Integer> map = new HashMap<>();
         for(int i=0; i<arr.length; i++){
             int compliment = k - arr[i];
             if(map.containsKey(compliment)){
