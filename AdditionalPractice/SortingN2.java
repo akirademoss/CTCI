@@ -4,7 +4,7 @@ public class SortingN2 {
     
 
 
-
+    //note: this problem involves sorting an array and returning the smallest element
     public static void main(String[] args){
     
         int[] array = {6,3,9,8,5,1};

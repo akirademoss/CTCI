@@ -1,4 +1,6 @@
-public class Q7{
+package Chapter1;
+
+public class Q7 {
 	/*****   Include the main() for testing and debugging  *****/
 	public static void main(String[] args){
 		

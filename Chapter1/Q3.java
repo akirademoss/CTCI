@@ -1,4 +1,6 @@
-public class Q3{
+package Chapter1;
+
+public class Q3 {
     /*****   Include the main() for testing and debugging  *****/
     public static void main(String[] args){
         String nameString = "Mr John Smith";

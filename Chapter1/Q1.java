@@ -1,4 +1,6 @@
-public class Q1{
+package Chapter1;
+
+public class Q1 {
 
 /*****   Include the main() for testing and debugging  *****/
     public static void main(String[] args){
@@ -26,5 +28,6 @@ public class Q1{
         }
         return true;
     }
+
 
 }

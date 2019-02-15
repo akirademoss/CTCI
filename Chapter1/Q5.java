@@ -1,4 +1,6 @@
-public class Q5{
+package Chapter1;
+
+public class Q5 {
     /*****   Include the main() for testing and debugging  *****/
     public static void main(String[] args){
         String s1 = "pale";
